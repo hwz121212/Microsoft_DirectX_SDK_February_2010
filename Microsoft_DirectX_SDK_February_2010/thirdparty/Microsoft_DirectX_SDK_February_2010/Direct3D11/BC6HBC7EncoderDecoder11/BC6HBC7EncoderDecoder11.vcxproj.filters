@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{0e2a387b-8811-465b-99b3-b8b0a8a1ed56}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{6447e303-e5c8-4ba8-97a9-b61f4871b599}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="BC6HBC7EncoderDecoder11.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\DXUT11\Optional\directx.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="BC6HDecode.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="BC6HEncode.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="BC7Decode.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="BC7Encode.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BC6HEncodeDecode.h" />
+    <ClInclude Include="BC7EncodeDecode.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BC6HBC7EncoderDecoder11.cpp" />
+    <ClCompile Include="BC6HEncodeDecode.cpp" />
+    <ClCompile Include="BC7EncodeDecode.cpp" />
+    <ClCompile Include="utils.cpp" />
+  </ItemGroup>
+</Project>
